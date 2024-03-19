@@ -19,7 +19,7 @@ const config = {
     },
   },
   options: {
-    database: "", // Nome do banco de dados
+    database: "webstore", // Nome do banco de dados
     trustServerCertificate: true, // Indica se deve confiar no certificado do servidor
   },
 };
@@ -73,7 +73,7 @@ async function executeQuery(query) {
 
 // Rota para a página inicial
 app.get("/", (req, res) => {
-  res.sendFile(__dirname + "/index.html"); // Envia o arquivo HTML da página inicial
+  res.sendFile(__dirname + "/indexform.html"); // Envia o arquivo HTML da página inicial
 });
 
 // Rota para obter os produtos em formato JSON
